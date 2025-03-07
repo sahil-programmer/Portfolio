@@ -14,7 +14,43 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.icon-link {
+  color: #00ff00;
+  font-size: 2rem;
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
+}
 
+.icon-link:hover {
+  transform: scale(1.2);
+  color: #00cc00;
+}
+#socials-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #00ff00; /* Green color to match your theme */
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 2px solid #00ff00;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+/* Add hover rotation instead of click */
+.social-item:hover .icon {
+  transform: rotate(360deg);
+  transition: transform 0.6s ease;
+}
+
+.social-link:hover {
+  background-color: #00ff00;
+  color: #000;
+  transform: translateY(-2px);
+}
 p {
   color: rgb(85, 85, 85);
 }
@@ -102,7 +138,42 @@ p {
     opacity: 1;
   }
 }
+/* Social container styling */
+#socials-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
 
+/* Social item container */
+.social-item {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* The actual clickable link */
+.social-link {
+  display: block;
+  text-decoration: none;
+}
+
+/* Icon styling */
+.icon {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for social item */
+.social-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Remove any existing rotation animations */
+.icon:active,
+.icon:focus {
+  transform: none !important;
+}
 .color-container {
   transition: transform 0.3s, box-shadow 0.3s;
 }
