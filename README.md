@@ -21,8 +21,7 @@ Welcome to my portfolio website! This project is a modern, responsive, and inter
 Check out the live demo of this project: [Live Demo](https://sahil-programmer.github.io/my-portfolio)
 
 ## 📸 Screenshots
-![Screenshot 1](./assets/screenshots/screenshot1.png)
-![Screenshot 2](./assets/screenshots/screenshot2.png)
+![Screenshot 1](./assets/image.png)
 
 ## 🧑‍💻 How to Run Locally
 1. Clone the repository:
